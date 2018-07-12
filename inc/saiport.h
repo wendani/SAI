@@ -1087,7 +1087,7 @@ typedef enum _sai_port_attr_t
     SAI_PORT_ATTR_PORT_POOL_LIST,
 
     /**
-     * @brief Port packet transmission enable
+     * @brief Port packet transmission disable
      *
      * Enable/Disable packet transmission of a port. When packet transmission
      * is disabled on a port, packets are still subject to regular ingress and egress
@@ -1097,9 +1097,9 @@ typedef enum _sai_port_attr_t
      *
      * @type bool
      * @flags CREATE_AND_SET
-     * @default true
+     * @default false
      */
-    SAI_PORT_ATTR_PKT_TX_ENABLE,
+    SAI_PORT_ATTR_PKT_TX_DISABLE,
 
     /**
      * @brief End of attributes
